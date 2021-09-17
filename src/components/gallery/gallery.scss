@@ -1,0 +1,56 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: center;
+    .card {
+      margin: 10px;
+      width: 300px;
+      background-color: #141414;
+      border: 1px solid #29292e;
+      padding: 15px 5px;
+      border-radius: 30px;
+      .profile,
+      .stats,
+      .desc {
+        padding: 0 10px;
+      }
+      .profile {
+        display: flex;
+        margin-bottom: 15px;
+        img {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+        span {
+          .username {
+            font-size: 14px;
+          }
+          .location {
+            color: #76777e;
+            font-size: 10px;
+          }
+        }
+      }
+      .image {
+        height: 300px;
+        width: 300px;
+        img {
+          border-radius: 15px;
+          width: 100%;
+          height: 100%;
+        }
+        margin-bottom: 15px;
+      }
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
